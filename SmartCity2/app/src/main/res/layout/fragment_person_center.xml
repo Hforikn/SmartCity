@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.PersonCenterFragment"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40sp"
+        android:background="@mipmap/ic_launcher"/>
+    
+    <EditText
+        android:id="@+id/login_userCard"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_et"
+        android:layout_marginTop="60dp"
+        android:hint="   请输入账号"
+        android:textColorHint="#737272"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/login_passwd"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_et"
+        android:layout_marginTop="25sp"
+        android:hint="   请输入密码"
+        android:textColorHint="#737272"
+        android:textColor="@color/black"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:background="@drawable/guide_btn"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有账号?立即创建"
+        android:textColor="#1a73e8"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"/>
+
+
+
+</LinearLayout>

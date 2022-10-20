@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/caipin_layout"
+    android:layout_marginTop="15dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/caipin_iv"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/caipin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/caipin_haoping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#737272"
+            android:textSize="12sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/caipin_xiaoliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#737272"
+            android:layout_toRightOf="@id/caipin_haoping"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/caipin_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="55dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/caipin_juli"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#737272"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginRight="50dp"-->
+<!--            android:layout_marginBottom="15dp"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/caipin_time"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#737272"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:layout_marginRight="10dp"/>-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

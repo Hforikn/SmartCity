@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.itcast.smartcity2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Activity.FEnXi2Activity"></activity>
+        <activity android:name=".Activity.FenXiActivity" />
+        <activity android:name=".Activity.Bus.BSDetailsActivity" />
+        <activity android:name=".Activity.Bus.BSActivity" />
+        <activity
+            android:name=".Activity.GuideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WaiMai.DianPuDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WaiMai.DianPuListActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WaiMai.DianPuListActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WaiMai.WaiMaiActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.TingN.CarLiShiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TingN.CarListDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TingN.TingNActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GeRenZX.MingXiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GeRenZX.YiJianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GeRenZX.XiuGaiMiMaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GeRenZX.DingDanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GeRenZX.QianBaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GeRenZX.GeRenXinXiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GeRenZX.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NewsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NewsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WelComeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.MainFragment"
+    android:background="#EFEEEE"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#EFEEEE">
+        <EditText
+            android:id="@+id/wai_search_et"
+            android:layout_width="380dp"
+            android:layout_height="35dp"
+            android:background="@drawable/search_et"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:hint="  请输入搜索内容"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColorHint="#737272"/>
+        <Button
+            android:id="@+id/wai_search_btn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="搜索"
+            android:background="@drawable/search_btn"
+            android:layout_alignRight="@id/wai_search_et"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/wai_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </com.youth.banner.Banner>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wai_icon_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wai_hot_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/dianList_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
